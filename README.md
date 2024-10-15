@@ -18,37 +18,37 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2)
-- Ubuntu Server 20.04
+- Ubuntu Server 24.04
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create a Windows 10 pro vm and a Linux (Ubuntu) vm
+- Download Wireshark
+- Observe various network protocols through Wireshark
+
 
 <h2>Actions and Observations</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+![image](https://github.com/user-attachments/assets/9fba6210-24e0-419e-ace6-091df964d579)
+
+Logged into the Windows 10 virtual machine and downloaded Wireshark. 
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+![image](https://github.com/user-attachments/assets/49467086-4910-47da-93f9-e33aefa6242a)
+
+The first task with Wireshark is to start a packet capture and observe the traffic. We will then observe ICMP traffic through Wireshark. 
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![image](https://github.com/user-attachments/assets/a0bd7db8-df35-4119-b3fe-2346985c7eba)
+
+I sent a ping request through Powershell on the Linux virtual machine on its private IP address.
+
+![image](https://github.com/user-attachments/assets/83fa71d5-d55f-4325-9598-387b8fbf757d)
+
+I then observed the request from the Linux virtual machine (10.1.0.5) and the replies from the Windows virtual machine (10.1.0.4). 
+
+![image](https://github.com/user-attachments/assets/d2349f15-4ad0-4130-81b4-da44d9268ac2)
+
+I then pinged www.google.com from the Windows 10 virtual machine and observed the results. 
