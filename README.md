@@ -31,19 +31,19 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 ![image](https://github.com/user-attachments/assets/9fba6210-24e0-419e-ace6-091df964d579)
 
-Logged into the Windows 10 virtual machine and downloaded Wireshark. 
+I Logged into the Windows 10 virtual machine that we created earlier and downloaded Wireshark. Wireshark is an open-source network protocol analyzer.
 </p>
 <br />
 
 ![image](https://github.com/user-attachments/assets/49467086-4910-47da-93f9-e33aefa6242a)
 
-The first task with Wireshark is to start a packet capture and observe the traffic. We will then observe ICMP traffic through Wireshark. 
+The first thing we want to do with Wireshark is to start a packet capture and observe the normal traffic that a computer uses. The first type of traffic that we are going to capture is ICMP traffic. ICMP (ping) is used to test the connectivity of a host on a network.
 </p>
 <br />
 
 ![image](https://github.com/user-attachments/assets/a0bd7db8-df35-4119-b3fe-2346985c7eba)
 
-I sent a ping request through Powershell on the Linux virtual machine on its private IP address.
+I sent a ping request through Powershell onto the Linux virtual machine on its private IP address (10.1.0.5).
 
 ![image](https://github.com/user-attachments/assets/83fa71d5-d55f-4325-9598-387b8fbf757d)
 
@@ -51,11 +51,11 @@ I then observed the request from the Linux virtual machine (10.1.0.5) and the re
 
 ![image](https://github.com/user-attachments/assets/d2349f15-4ad0-4130-81b4-da44d9268ac2)
 
-I then pinged www.google.com from the Windows 10 virtual machine and observed the results. 
+I then pinged www.google.com from the Windows 10 virtual machine and observed the results of the request and reply. 
 
 ![image](https://github.com/user-attachments/assets/719195c0-154d-4c43-8919-8071878e1929)
 
-I initiated a continuous ping from Powershell to the Ubuntu vm and observed the traffic in Wireshark. 
+I initiated a continuous ping from Powershell to the Ubuntu virtual machine and observed the traffic in Wireshark. 
 
 ![image](https://github.com/user-attachments/assets/3d9583bd-aaf9-47ac-830b-cf665f11732d)
 
