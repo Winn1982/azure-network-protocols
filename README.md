@@ -79,4 +79,8 @@ I then "SSH into" the Linux virtual machine through Powershell and observed the 
 
 ![image](https://github.com/user-attachments/assets/a71c8221-de1c-40a6-8380-b0b8816c2f2f)
 
-I then filtered for dns traffic only in Wireshark. I typed nslookup google.com in Powershell and observed the traffic.
+I then filtered for dns traffic only in Wireshark. I typed nslookup google.com in Powershell and observed the traffic in Wireshark.
+
+![image](https://github.com/user-attachments/assets/a5ddc277-3229-454a-8ebc-ebc3dbf0e62b)
+
+The last thing that was done with Wireshark was I searched for RDP(tcp.port==3389) traffic only and observed the constant stream of traffic as the RDP was always transmitting. 
