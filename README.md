@@ -69,3 +69,14 @@ I observed in Powershell that the traffic started to time out.
 
 I also observed in Wireshark that the traffic stopped receiving acknowledgments and only received the ping request.  
 
+![image](https://github.com/user-attachments/assets/ac5bf84d-a9df-46e5-a89e-a0fbf3efbce1)
+
+I then deleted the security rule to block all incoming ICMP traffic and observed the traffic results begin again in both Wireshark and Powershell. 
+
+![image](https://github.com/user-attachments/assets/7b0ffde3-8c84-4b27-9211-7108db3f20af)
+
+I then "SSH into" the Linux virtual machine through Powershell and observed the traffic through Wireshark while typing random commands into Powershell. 
+
+![image](https://github.com/user-attachments/assets/a71c8221-de1c-40a6-8380-b0b8816c2f2f)
+
+I then filtered for dns traffic only in Wireshark. I typed nslookup google.com in Powershell and observed the traffic.
